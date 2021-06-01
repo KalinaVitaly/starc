@@ -1,4 +1,4 @@
-#pragma once
+ #pragma once
 
 #include <ui/widgets/dialog/abstract_dialog.h>
 

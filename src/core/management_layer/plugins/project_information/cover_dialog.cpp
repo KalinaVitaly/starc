@@ -7,7 +7,6 @@
 
 #include <QGridLayout>
 
-
 namespace Ui
 {
 
@@ -48,6 +47,8 @@ CoverDialog::CoverDialog(QWidget* _parent)
     : AbstractDialog(_parent),
       d(new Implementation(this))
 {
+    setRejectButton(d->cancelButton);
+
     contentsLayout()->setContentsMargins({});
     contentsLayout()->setSpacing(0);
     contentsLayout()->addWidget(d->imageCropper, 0, 0);
